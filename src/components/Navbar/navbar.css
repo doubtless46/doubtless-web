@@ -1,0 +1,129 @@
+.header{
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    box-shadow: 0 2px 4px hsla(0, 0%, 13%, 0.242);
+    padding: 1rem;
+    z-index: 100;
+}
+
+.logo{
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon{
+    font-size: 25px;
+    transform: translateY(5px);
+}
+
+@media screen and (max-width:768px) {
+    .navBar{
+        position: absolute;
+        height: max-content;
+        width: 80%;
+        border-radius: 1rem;
+        top: -500rem;
+        padding: 1rem;
+        left: 50%;
+        transform: translate(-50%);
+        z-index: 200;
+        box-shadow: 0 2px 4px rgba(53, 7, 86, 0.45);
+        transition: 0.5s ease-in-out;
+    }
+
+    .activeNavbar{
+        top: 7rem;
+    }
+
+    .navLists{
+        flex-direction: column;
+        width: 100%;
+        margin: auto;
+        padding: 0.5rem 0;
+    }
+
+    .nav-item{
+        padding: .5rem 0;
+    }
+
+    .navlink{
+        color: rgb(45, 1, 42);
+        font-size: 0.9rem;
+        font-weight: 600;
+    }
+    .navlink:hover{
+        color: rgb(125, 43, 149);
+    }
+
+    .btn{
+        margin-top: 1rem;
+    }
+
+    .btn a{
+        font-weight: 600;
+        color: #d0ddde;
+    }
+
+
+    .closenavBar{
+        position: absolute;
+        top: 1rem;
+        right: 1.5rem;
+        color: rgb(47, 9, 40);
+    }
+    
+    .closenavBar:hover{
+        color: rgb(125, 43, 149);
+    }
+}
+
+.toggleNavbar{
+    color: rgb(47, 9, 40);
+}
+
+.toggleNavbar:hover{
+    color: rgb(125, 43, 149);
+}
+
+@media screen and (min-width:769px) {
+    .toggleNavbar,.closenavBar{
+        display: none;
+    }    
+
+    .header{
+        padding: 1.5rem 2rem;
+    }
+
+    .navBar .navLists{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+    }
+
+    .nav-item .navlink{
+        color: rgb(45, 1, 42);
+        padding: 0 .45rem;
+        font-size: 0.9rem;
+        font-weight: 500;
+    }
+
+    .nav-item .navlink:hover{
+        color: rgb(125, 43, 149);
+    }
+
+    .btn{
+        margin-left: 1rem;
+    }
+
+    .btn a{
+        color: #d0ddde;
+        font-weight: 500;
+    }
+}
