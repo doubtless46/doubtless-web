@@ -1,7 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion"
 import Link from "next/link";
-import { duration } from "@mui/material";
 import TwitterIcon from '@mui/icons-material/Twitter';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';

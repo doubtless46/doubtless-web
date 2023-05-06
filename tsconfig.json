@@ -30,6 +30,6 @@
       "hooks/*": ["hooks/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "components/AnimatedText.tsx"],
   "exclude": ["node_modules"]
 }
