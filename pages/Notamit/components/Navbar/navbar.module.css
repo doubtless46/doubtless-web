@@ -4,17 +4,12 @@
       width: 100%;
       font-size: 1.5rem;
 }
-
 .ul{
       width:100%;
       display: flex;
       justify-content: center;
       list-style: none;
       gap:4em;
-}
-.homenav{
-      color: #F6490D;
-      text-decoration: none;
 }
 .liststyle{
       color:#FAF9F0;
