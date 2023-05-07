@@ -7,8 +7,6 @@ import Button from "@mui/material/Button";
 import ProfilePic from "../../Public/joker.jpg";
 import { AnimatedText } from "components/AnimatedText";
 
-
-
 const Index = () => {
   return (
     <div>
