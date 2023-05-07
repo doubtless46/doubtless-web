@@ -43,6 +43,7 @@ body{
     display: inline-block;
     width: 100%;
     text-decoration: solid;
+    font-weight: bold;
     color: #b0bec4c4;
     text-transform: uppercase;
     font-size: 3rem;

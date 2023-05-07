@@ -3,7 +3,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
+    padding: 14px;
   }
   
   .nav ul {
@@ -12,7 +12,7 @@
   }
   
   .nav ul li {
-    margin-right: 3rem;
+    margin-right: 1.3rem;
   }
   
   .nav ul li:last-child {
@@ -36,7 +36,7 @@
     align-items: center;
     list-style: none;
     text-decoration: none;
-    margin-right: 2rem;
+    margin-right: 5rem;
   }
   
   .so{
@@ -66,3 +66,152 @@
   stroke-width: 5.333333333333333;
 }
 
+.Phead{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: aliceblue;
+  font-weight: bold;
+  font-size: 3rem;
+
+}
+
+.Phead span{
+  color:#8ceef2;
+  padding-left: 0.8rem;
+}
+
+.education{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-height: auto;
+  color: aliceblue;
+  padding-bottom: 5rem;
+}
+
+
+.education .education-row {
+    display: flex;
+    gap: 5rem;
+    margin: 0.4rem;
+  }
+
+.education-row .education-column{
+  flex: 1 1 40rem
+}
+
+.education-column .title{
+  font-size: 2.5rem;
+  margin: 0 0 1.5rem 2rem;
+}
+
+.education-column .education-box{
+  border-left: 0.2rem solid #8ceef2;
+}
+
+.education-box .education-content{
+  position: relative;
+  padding-left: 1rem;
+}
+
+.education-box .education-content::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -0.6rem;
+    width: 1.1rem;
+    height: 1.1rem;
+    background-color: #8ceef2;
+    border-radius: 50%;
+}
+
+
+.education-content .content{
+  position: relative;
+  padding: 1.5rem;
+  border: .2rem solid #8ceef2;
+  margin-bottom: 2rem;
+}
+
+.education-content .content::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  z-index: -1;
+  background-color: #13494b6e;
+  height: 100%;
+  transition: 0.5s;
+}
+.education-content .content:hover:before{
+  width: 100%;
+}
+
+
+.education-content .content .year{
+  font-size: 1.5rem;
+  color: #8ceef2;
+  padding-bottom: 0.5rem;
+}
+
+.education-content .content .year .i{
+  padding-right: 0.5rem;
+  padding-top: 0.5rem;
+}
+
+.education-content .content h3{
+  font-size: 1.5rem;
+}
+
+.education-content .content p{
+  font-size: 1rem;
+  padding-top: 0.2rem;
+}
+
+.contact{
+  min-height: auto;
+  padding-bottom: 7rem;
+}
+
+.contact form{
+  max-width: 70rem;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.contact form .input-box{
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.contact form .input-box .input-field{
+  position: relative;
+  width: 49%;
+  margin: .8rem 0;
+}
+.contact form .textarea-field{
+  margin-top: 1rem;
+}
+.contact form .input-box .input-field input,
+.contact form .textarea-field textarea{
+  width: 100%;
+  height: 100%;
+  padding: 0.1rem;
+  margin: 0.6rem;
+  font-size: 1.2rem;
+  color: #8ceef2;
+  background:transparent;
+  border-radius: 0.6rem;
+  border: 0.2rem solid #8ceef2;
+}
+
+.contact form .input-box .input-field input::placeholder,
+.contact form .textarea-field textarea::placeholder{
+  color: aliceblue;
+  padding-left: 1rem;
+}

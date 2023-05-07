@@ -19,7 +19,7 @@
     "strictNullChecks": true,
     "baseUrl": ".",
     "paths": {
-      "components/*": ["components/*"],
+      "components/*": ["pages/components/*"],
       "pages/*": ["pages/*"],
       "constants/*": ["constants/*"],
       "styles/*": ["styles/*"],
@@ -30,6 +30,6 @@
       "hooks/*": ["hooks/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "components/AnimatedText.tsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "pages/components/AnimatedText.tsx"],
   "exclude": ["node_modules"]
 }
