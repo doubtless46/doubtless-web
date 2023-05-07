@@ -195,9 +195,21 @@
   margin: .8rem 0;
 }
 .contact form .textarea-field{
-  margin-top: 1rem;
+  margin: .8rem 0 2.7rem;
+  position: relative;
+  display: flex ;
 }
-.contact form .input-box .input-field input,
+.contact form .input-box .input-field input{
+  width: 95%;
+  height: 100%;
+  padding: 0.1rem;
+  margin: 0.6rem;
+  font-size: 1.2rem;
+  color: #8ceef2;
+  background:transparent;
+  border-radius: 0.6rem;
+  border: 0.2rem solid #8ceef2;
+}
 .contact form .textarea-field textarea{
   width: 100%;
   height: 100%;
@@ -209,9 +221,44 @@
   border-radius: 0.6rem;
   border: 0.2rem solid #8ceef2;
 }
+.contact form .focus{
+  position: absolute;
+    top: 0.9rem;
+    left: 0.9rem;
+    width: 0;
+    height: 100%;
+    border-radius: 0.6rem;
+    z-index: -1;
+    transition: 0.5s;;
+    background: #13494b6e;
+}
+
+.contact form .input-box .input-field input:focus~.focus,
+.contact form .input-box .input-field input:valid~.focus{
+    width: 95%;
+}
+.contact form .textarea-field textarea:focus~.focus,
+.contact form .textarea-field textarea:valid~.focus{
+    width: 98%;
+    height: 92%;
+}
 
 .contact form .input-box .input-field input::placeholder,
 .contact form .textarea-field textarea::placeholder{
   color: aliceblue;
   padding-left: 1rem;
+}
+
+.footer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 2rem;
+  color: #8ceef2;
+  text-decoration: solid;
+}
+
+.footer-text p{
+  font-size: 1.2rem;
 }

@@ -1,4 +1,3 @@
-import Navbar from "pages/components/Navbar";
 import Link from "next/link";
 import React from "react";
 import Image from "next/image";
@@ -10,8 +9,6 @@ import { AnimatedText } from "pages/components/AnimatedText";
 const Index = () => {
   return (
     <div>
-      <Navbar />
-
       <section className="Main">
         <main className="main">
           <div className="hero">
@@ -46,7 +43,7 @@ const Index = () => {
             </p>
             <Box sx={{ "& button": { m: 1 } }}>
               <Button variant="outlined" size="medium">
-                <Link href="/VaibhavGupta.pdf" target="_blank" style={{ color: "#8ceef2", textDecoration: "none" }}>Resume</Link>
+                <Link href="https://drive.google.com/file/d/14X6WprqCUTkDEnjgZAHT6HhFIXMViSgO/view?usp=sharing" target="_blank" style={{ color: "#8ceef2", textDecoration: "none" }}>Resume</Link>
               </Button>
               <Button variant="outlined" size="medium">
                 <Link href="/contact" target="_blank" style={{ color: "#8ceef2", textDecoration: "none" }}>

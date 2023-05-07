@@ -12,7 +12,7 @@ export const AnimatedText = (props: Props) => {
         <motion.h1 className= {props.className}>
                 <Typewriter
                options={{
-                 strings: ["FullStack Developer",props.text],
+                 strings: ["Full Stack Developer",props.text],
                  autoStart: true,
                  loop: true,
                }}
