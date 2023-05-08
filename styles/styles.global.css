@@ -24,9 +24,7 @@ body{
     align-items: center;
     flex-direction: row;
     height: 100%;
-    /* display: inline-block; */
     z-index: 0;
-    /* background-color: blue; */
     padding: 0 1rem ;
 }
 
@@ -37,6 +35,13 @@ body{
     flex-direction: column;
     flex-wrap: wrap;
     width: 50%;
+    background: transparent;
+    transition: 5s smooth;
+}
+
+.hero .image:hover{
+    background: #081b29;
+    opacity: 0.8;
 }
 
 .heading{
@@ -64,3 +69,59 @@ body{
     text-align: left;
   }
   
+
+  .about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    background: #081b29;
+}
+
+.about-img{
+    padding-left: 16rem;
+}
+.about-img .image{
+    background: #112e42;
+    display: flex;
+    width: 50%;
+    height: auto;
+    border-radius: 50%;
+    border: .2rem solid #8ceef2;
+}
+
+.about-img .circle-spin{
+    position: absolute;
+    top: 48.5%;
+    left: 50.2%;
+    transform: translate(-50%, -50%) rotate(0);
+    width: 21%;
+    height: 44%;
+    border-radius: 50%;
+    border-top: 0.2rem solid #8ceef2;
+    border-bottom: 0.2rem solid #8ceef2;
+    border-right: 0.2rem solid #081b29;
+    border-left: 0.2rem solid #081b29;
+    animation: aboutSpinner 8s linear infinite;
+    
+}
+
+@keyframes aboutSpinner{
+    100%{
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+
+.about-content{
+    text-align: center;
+}
+
+.about-content h3{
+    font-size: 2.6rem;
+}
+
+.about-content p{
+    font-size: 1.6rem;
+    margin: 2rem 0 3rem;
+}

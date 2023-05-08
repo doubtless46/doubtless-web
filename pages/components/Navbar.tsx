@@ -20,9 +20,6 @@ function Navbar() {
             <Link href="/About">About</Link>
           </li>
           <li>
-            <Link href="/About">Skills</Link>
-          </li>
-          <li>
             <Link href="/Portfolio">Portfolio</Link>
           </li>
           <li>
@@ -41,16 +38,16 @@ function Navbar() {
         </div>
         </h2>
       <div className="social">
-        <MotionLink whileHover={{ y: -3}} whileTap={{scale : 0.9}} className="so" href="">
+        <MotionLink whileHover={{ y: -3}} whileTap={{scale : 0.9}} className="so" target="_blank" href="https://github.com/Vaibhavg4651">
           <GitHubIcon/>
         </MotionLink>
-        <MotionLink whileHover={{ y: -3}} whileTap={{scale : 0.9}} className="so" href="">
+        <MotionLink whileHover={{ y: -3}} whileTap={{scale : 0.9}} className="so" target="_blank" href="https://www.linkedin.com/in/vaibhav-gupta-7a2992227/">
           <LinkedInIcon/>
         </MotionLink>
-        <MotionLink whileHover={{ y: -3}} whileTap={{scale : 0.9}} className="so" href="">
+        <MotionLink whileHover={{ y: -3}} whileTap={{scale : 0.9}} className="so"  target="_blank"href="https://twitter.com/vaibhavg4651">
           <TwitterIcon/>
         </MotionLink>
-        <MotionLink  whileHover={{ y: -3}} whileTap={{scale : 0.9}} className="so" href="">
+        <MotionLink  whileHover={{ y: -3}} whileTap={{scale : 0.9}} className="so"  target="_blank"href="https://www.instagram.com/vaibhavv.io/">
           <InstagramIcon/>
         </MotionLink>
       </div>

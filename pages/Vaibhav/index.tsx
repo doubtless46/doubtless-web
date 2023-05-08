@@ -46,7 +46,7 @@ const Index = () => {
                 <Link href="https://drive.google.com/file/d/14X6WprqCUTkDEnjgZAHT6HhFIXMViSgO/view?usp=sharing" target="_blank" style={{ color: "#8ceef2", textDecoration: "none" }}>Resume</Link>
               </Button>
               <Button variant="outlined" size="medium">
-                <Link href="/contact" target="_blank" style={{ color: "#8ceef2", textDecoration: "none" }}>
+                <Link href="/Contact" style={{ color: "#8ceef2", textDecoration: "none" }}>
                   Contact
                 </Link>
               </Button>
