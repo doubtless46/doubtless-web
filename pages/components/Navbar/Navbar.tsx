@@ -14,10 +14,10 @@ const Navbar = () => {
        <Typography variant='h1'>Doubtless</Typography>
       </Box>
       <Box sx={{ display: { xs: 'none', md:'flex' },justifyContent:'space-around',alignItems:'center'}}>
-         {navitems?.map((item,index)=>(
+         {navitems?.map((item: string,index: number)=>(
                    <Navitem index={index} item={item}/>
          ))}
-         
+
          <Button sx={{ml:'0.5em',bgcolor:'#0f766e'}} variant="contained">Get Started</Button>
          <Box sx={{ml:'0.9em'}} onClick={()=>{
           setDarkMode(!darkmode)
