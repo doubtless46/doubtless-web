@@ -23,13 +23,11 @@ const mobilemenu = (
   </Box>
 );
 
-
 const Navbar = () => {
   const [darkmode, setDarkMode] = useState(false);
   const[mobilemenu,setMobileMenu]=useState(false);
   const toggleMenu=()=>{
     setMobileMenu(!mobilemenu)
-  }
   const toggleDarkMode=()=>{
     setDarkMode(!darkmode)
   }
