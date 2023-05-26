@@ -8,12 +8,26 @@ import { useState } from "react";
 import Navitem from "../Navitem";
 import ButtonComp from "../ButtonComp";
 const navitems = ["Home", "About", "Contact"];
+const mobilemenu = (
+  <Box
+    sx={{
+      display: { xs: "flex", md: "none" },
+      flexDirection: "column",
+      alignItems: "center",
+      w: 250,
+    }}
+  >
+    {navitems?.map((item: string, index: number) => (
+      <Navitem index={index} item={item} key={index} />
+    ))}
+  </Box>
+);
+
 const Navbar = () => {
   const [darkmode, setDarkMode] = useState(false);
   const[mobilemenu,setMobileMenu]=useState(false);
   const toggleMenu=()=>{
     setMobileMenu(!mobilemenu)
-  }  
   const toggleDarkMode=()=>{
     setDarkMode(!darkmode)
   }
