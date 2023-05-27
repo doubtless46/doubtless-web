@@ -13,7 +13,7 @@ const Navitems = (props: Props) => {
        mb:'10',
        fontWeight: 700,
        letterSpacing: '.3rem',
-       color: '#6b7280',
+       color: 'black',
        textDecoration: 'none',
      }}>
        {props.item}
