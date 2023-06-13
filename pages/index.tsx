@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <ThemeProvider theme={theme}>
      <Container>
-        <Navbar/>
+      <Navbar/>
      </Container>
     </ThemeProvider>
   );
