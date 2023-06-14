@@ -1,7 +1,7 @@
 import Link from "next/link";
 
 
-function toggling(e) {
+function toggling(e:any) {
 
     if (e.target.classList.contains("like")) {
         e.target.classList.add("darkliked");
@@ -12,7 +12,7 @@ function toggling(e) {
         e.target.classList.add("like")
     }
 };
-function toggling2(e) {
+function toggling2(e:any) {
     if (e.target.classList.contains("dislike")) {
         e.target.classList.add("darkdisliked");
         e.target.classList.remove("dislike");

@@ -7,7 +7,7 @@ import { useState } from "react";
 import Navitem from "../Navitem";
 import ButtonComp from "../ButtonComp";
 
-const navitems = ["Home", "About", "Contact"];
+const navitems = ["Home", "About", "doubtpage"];
 
 const Navbar = () => {
   const [darkmode, setDarkMode] = useState(false);
@@ -84,6 +84,6 @@ const Navbar = () => {
     </Box>
   );
 };
-}
+
 export default Navbar;
 

@@ -8,7 +8,7 @@ const Navitems = (props: Props) => {
   return (
       <Box sx={{ml:'0.5em'}} key={props.index}>
       {/* give divs id matching to the array name in the array above */}
-     <Typography component="a" href={`#${props.item}`} sx={{
+     <Typography component="a" href={`${props.item}`} sx={{
        mr: 2,
        mb:'10',
        fontWeight: 700,
