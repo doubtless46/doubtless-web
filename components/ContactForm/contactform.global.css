@@ -1,0 +1,19 @@
+.contact-form{
+      border-radius: 12px;
+      background-color: rgb(217, 217, 249);
+      padding: 1em;
+      min-width: 300px;
+      max-width: 600px;
+      margin: 2em auto;
+}
+.contact-header{
+font-size: 2rem;
+  font-weight: 800;
+  font-family: 'Bogart Light';
+  margin:1em 0;
+  text-align: center;
+}
+.contact-header p{
+font-weight: 300;
+    font-family: altivo;
+}
