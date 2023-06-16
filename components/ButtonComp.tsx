@@ -4,7 +4,9 @@ interface Props{
 }
 const ButtonComp = (props: Props) => {
   return (
-    <Button sx={{ mx: "0.5em", bgcolor: "#9370DB",my:'10' }} variant="contained">
+    <Button sx={{ mx: "0.5em", bgcolor: "#9370DB",my:'10' ,"&:hover": {
+      bgcolor: "#9e7cc2",
+    }}} variant="contained">
       {props.content}
     </Button>
   )
