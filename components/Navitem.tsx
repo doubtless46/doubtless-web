@@ -6,9 +6,12 @@ interface Props{
 }
 const Navitems = (props: Props) => {
   return (
-      <Box sx={{ml:'0.5em'}} key={props.index}>
+      <Box sx={{pl:'0.5em',"&:hover": {
+        borderBottom:'2px solid black'
+      }}} key={props.index}>
       {/* give divs id matching to the array name in the array above */}
      <Typography component="a" href={`${props.item}`} sx={{
+      textAlign:'center',
        mr: 2,
        mb:'10',
        fontWeight: 700,
