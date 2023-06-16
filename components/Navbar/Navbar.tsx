@@ -7,7 +7,7 @@ import { useState } from "react";
 import Navitem from "../Navitem";
 import ButtonComp from "../ButtonComp";
 
-const navitems = ["Home", "About", "doubtpage"];
+const navitems = ["Home", "About", "Doubtpage"];
 
 const Navbar = () => {
   const [darkmode, setDarkMode] = useState(false);
@@ -41,6 +41,7 @@ const Navbar = () => {
         sx={{
           bgcolor: 'white',
           display: { xs: "flex", md: "none" },
+          transition: '1s all ease' ,
           flexDirection: "row",
           alignItems: "center",
           w: 250,
@@ -51,7 +52,7 @@ const Navbar = () => {
         </IconButton>
 
         {mobilemenu && (
-          <Box sx={{ position: 'absolute', top: 50, right: '0', display: 'flex', flexDirection: "column", alignItems: "center", w: '100%', transition: '1s position ease-in-out' }}>
+          <Box sx={{ position: 'absolute', top: 50, right: '0', display: 'flex', flexDirection: "column", alignItems: "center", w: '100%',p:'2em',bgcolor:'white',transition:'background-color 0.3s ease'}}>
             {navitems?.map((item, index) => (
               <Navitem index={index} item={item} key={index} />
             ))}
@@ -75,7 +76,7 @@ const Navbar = () => {
         <ButtonComp content='Get Started' />
 
         <Box
-          sx={{ ml: "0.9em" }}
+          sx={{ ml: "0.9em" ,cursor:'pointer'}}
           onClick={toggleDarkMode}
         >
           {!darkmode ? <WbSunnyOutlinedIcon /> : <DarkModeOutlinedIcon />}
