@@ -25,11 +25,20 @@ function toggling2(e) {
 export default function Home() {
     return (
         <>
+        <div className="db">
+            <div className="head">get your doubts cleared!!</div>
+            <div className="sec">
+        </div>
+        
+            
+        </div>
             <div className="container">
                 <div >
                     <div >
                         <div className="maincomp">
+                        
                             <div className="inside">
+                                
                                 <div className="topcomp">
                                     <span className='user'></span>
                                     {/* <img src="./user.png" alt="like" className='user' /> */}
@@ -48,7 +57,7 @@ export default function Home() {
                                 <div className="container text">
                                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At doloremque, repellendus quos, explicabo odit voluptas deleniti magnam vero Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore voluptas vel quisquam omnis repudiandae, illum temporibus tempora alias laborum doloribus ullam placeat asperiores repellat debitis sed. Ut maiores magni in!</p>
                                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti laborum repudiandae, tempora error veritatis numquam libero Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt est quaerat aperiam qui sequi itaque impedit ab magnam hic rem accusantium, pariatur iusto provident facere numquam laboriosam enim ratione porro?</p>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti laborum repudiandae, tempora error veritatis numquam libero Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt est quaerat aperiam qui sequi itaque impedit ab magnam hic rem accusantium, pariatur iusto provident facere numquam laboriosam enim ratione porro?</p>
+                                    
                                 </div>
                             </div>
                         </div>
@@ -58,6 +67,7 @@ export default function Home() {
                 <div >
                     <div >
                         <div className="maincomp">
+                        
                             <div className="inside">
                                 <div className="topcomp">
                                     <span className='user'></span>
@@ -76,7 +86,7 @@ export default function Home() {
                                 <div className="container text">
                                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At doloremque, repellendus quos, explicabo odit voluptas deleniti magnam vero Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus similique vero, pariatur esse possimus animi commodi dicta veritatis reiciendis, sit natus praesentium quae amet dolor deserunt saepe ipsum, harum illum?</p>
                                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti laborum repudiandae, tempora error veritatis numquam libero Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis, tempora officia natus voluptatibus animi adipisci velit accusantium aspernatur consequuntur hic sequi ea, reiciendis quis culpa eligendi cumque? Quas, commodi cupiditate!</p>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti laborum repudiandae, tempora error veritatis numquam libero Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis, tempora officia natus voluptatibus animi adipisci velit accusantium aspernatur consequuntur hic sequi ea, reiciendis quis culpa eligendi cumque? Quas, commodi cupiditate!</p>
+                                    
                                 </div>
                             </div>
                         </div>
@@ -86,6 +96,7 @@ export default function Home() {
                 <div >
                     <div >
                         <div className="maincomp">
+                        
                             <div className="inside">
                                 <div className="topcomp">
                                     <span className='user'></span>
@@ -104,7 +115,7 @@ export default function Home() {
                                 <div className="container text">
                                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At doloremque, repellendus quos, explicabo odit voluptas deleniti magnam vero Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste esse fugit cupiditate, dignissimos laboriosam eum qui odit aspernatur error perspiciatis! Molestiae ut error praesentium nam, aliquid ipsam numquam rem eligendi?</p>
                                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti laborum repudiandae, tempora error veritatis numquam libero Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laborum corrupti at cumque voluptates et consectetur vero, rem perspiciatis unde? Architecto, odio. Quos, quod similique esse deleniti numquam iste natus.</p>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti laborum repudiandae, tempora error veritatis numquam libero Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laborum corrupti at cumque voluptates et consectetur vero, rem perspiciatis unde? Architecto, odio. Quos, quod similique esse deleniti numquam iste natus.</p>
+                                    
                                 </div>
                             </div>
                         </div>
