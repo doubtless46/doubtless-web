@@ -1,0 +1,97 @@
+.box {
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+  }
+
+  
+  .box .group {
+    background-color: #ffffff;
+    border-color: #dfe5ed;
+    border-radius: 1vw;
+    height: 200px;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 300px;
+    border: solid black 1px;
+  }
+  
+
+  .HeadC{
+    top: 15px;
+    left: 25px;
+    position: relative;
+    color: #000000;
+    font-family: "Poppins-SemiBold", Helvetica;
+    font-weight: 600;
+    letter-spacing: 0;
+    line-height: 32px;
+  }
+  .tagC{
+    top: 3px;
+    left: 25px;
+    position: relative;
+    color: #95979c;
+    font-family: "Poppins-Medium", Helvetica;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0;
+    line-height: 32px;
+  }
+
+  .textC{
+    top: 3px;
+    left: 25px;
+    width: 250px;
+    position: relative;
+    color: #000000;
+    font-family: "Poppins-Medium", Helvetica;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0;
+  }
+
+  @media only screen and (max-width: 600px) {
+    /* For mobile phones: */
+    .box .group {
+      /* border-radius: 30px; */
+      height: 30vw;
+      left: 0;
+      position: fixed;
+      top: 0;
+      width: 90vw;
+      display: grid;
+    }  
+    .HeadC{
+      top: 1vw;
+      left: 2vw;
+    }
+    .tagC{
+      display: none;
+      top: -5vw;
+      left: 40vw;
+      position: relative;
+      color: black;
+
+    }
+    .textC{
+      top: -1vw;
+      width: 82vw;
+      height: 18vw;
+      overflow:hidden
+    }
+  }
+
+
+
+
+
+
+
+
+
+

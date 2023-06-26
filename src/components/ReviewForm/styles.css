@@ -1,0 +1,115 @@
+.desktop .group-32 {
+  height: 30.486vw;
+  left: 9.583vw;
+  position: absolute;
+  top: 250vw;
+  width: 31.181vw;
+}
+
+
+
+
+
+.desktop .overlap-name {
+  top: 0;
+  height: 4.236vw;
+  background-color: white;
+  color: black;
+  padding-left: 2vw;
+  border: 1.5px solid;
+  border-color: #e2e2e2;
+  border-radius: 8px;
+  left: 0;
+  position: absolute;
+  width: 30.625vw;
+  font: inherit;
+  font-size: inherit;
+}
+
+
+.desktop .overlap-email {
+  top: 5.625vw;
+  height: 4.236vw;
+  background-color: white;
+  color: black;
+  padding-left: 2vw;
+  width: inherit;
+  border: 1.5px solid;
+  border-color: #e2e2e2;
+  border-radius: 8px;
+  border-radius: 8px;
+  left: 0;
+  position: absolute;
+  width: 30.625vw;
+  font: inherit;
+  font-size: inherit;
+}
+
+
+.desktop .overlap-address {
+  top: 11.25vw;
+  height: 11.736vw;
+  background-color: white;
+  color: black;
+  padding-left: 2vw;
+  padding-top: 2vw;
+  width: inherit;
+  border: 1.5px solid;
+  resize: none;
+  left: 0;
+  border-color: #e2e2e2;
+  border-radius: 8px;
+  position: absolute;
+  width: 30.625vw;
+  font: inherit;
+  font-size: inherit;
+}
+.desktop .overlap-button {
+  top: 26.25vw;
+  height: 4.236vw;
+  border-radius: 8px;
+  left: 0;
+  position: absolute;
+  background-color: #ae3aff;
+  width: 33.181vw;
+}
+
+@media only screen and (max-width: 600px) {
+
+  /* For mobile phones: */
+  .desktop .group-32 {
+    top: 260vw;
+    height: 50vw;
+    width: 80vw;
+  }
+
+  .desktop .overlap-name {
+    top: 0vw;
+    height: 10vw;
+    width: 80vw;
+  }
+
+
+
+  .desktop .overlap-email {
+    top: 12vw;
+    height: 10vw;
+    width: 80vw;
+  }
+
+  .desktop .overlap-address {
+    top: 24vw;
+    height: 10vw;
+    width: 80vw;
+  }
+
+  .desktop .overlap-button {
+    top: 38vw;
+    height: 7vw;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+    font-size: 4vw;
+    width: 83vw;
+  }
+
+}
