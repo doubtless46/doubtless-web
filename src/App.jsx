@@ -16,35 +16,38 @@ const App = () => {
       <div className="div">
         <div className="overlap">
           <div className="overlap-group">
-          
-            <Hero/>
-            <Navbar/>
-            <Screens group={group}/>
+
+            <Hero />
+            <Navbar />
+            <Screens group={group} />
 
 
           </div>
           <div className="overlap-2">
             <p className="lorem-ipsum-dolor">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-              ea commodo consequat. <br />
+              Had an argument with your faculty??<br />
+              Placement related issues??<br />
+              Or don't know what to do when your attendance is short ?<br />
+              Are you tired of endless hours spent searching for answers to these kind college-related doubts?<br />
               <br />
-              Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
-              laborum.
+              Well, worry no more! Introducing Doubtless, the revolutionary app that solves all your college-related problems with just a few taps!<br />
+              We understand the struggles of college life. That's why we created Doubtless, the app that brings clarity to your college journey.<br />
+              Don't let doubts hold you back! With Doubtless, you'll have the confidence to conquer any challenge that comes your way.<br />
+              <br/>
+              So why wait? Join the Doubtless community and unlock a world of knowledge and support. <br />Download Doubtless today from the App Store or Google Play!
             </p>
             <div className="ellipse-4" />
             <img className="onboarding" alt="Onboarding" src={onboarding2} />
             <img className="splash" alt="Splash" src={splash1} />
-            <Tags/>
+            <Tags />
 
           </div>
         </div>
-        <Testimonials/>
+        <Testimonials />
 
-        <ReviewForm/>
+        <ReviewForm />
 
-        <Socials/>
+        <Socials />
 
       </div>
     </div>

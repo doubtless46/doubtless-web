@@ -18,15 +18,15 @@ const ReviewForm = () => {
                         <input type="text" className="overlap-name"
                             value={name}
                             onChange={(e) => setName(e.target.value)}
-                            placeholder='name' />
+                            placeholder='Name' />
                         <input type="text" className="overlap-email"
                             value={email}
                             onChange={(e) => setEmail(e.target.value)}
-                            placeholder='email' />
+                            placeholder='Email' />
                         <textarea
                             value={address}
                             onChange={(e) => setAddress(e.target.value)}
-                            className="overlap-address" placeholder='address' />
+                            className="overlap-address" placeholder='Address' />
 
                         <button type='submit' className="overlap-button">Send Message
                         </button>

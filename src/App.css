@@ -348,52 +348,7 @@
     width: 33.194vw;
   }
 
-  
-  .desktop .group-2 {
-    height: 4.236vw;
-    left: 64.028vw;
-    position: absolute;
-    top: 48.958vw;
-    width: 17.917vw;
-  }
-  
-  .desktop .group-3 {
-    height: 4.236vw;
-    width: 18.056vw;
-  }
-  
-  .desktop .overlap-group-3 {
-    border-radius: 8px;
-    height: 4.236vw;
-    position: relative;
-    width: 17.917vw;
-  }
-  
-  .desktop .rectangle-3 {
-    background-color: #ae3aff;
-    border-radius: 8px;
-    height: 4.236vw;
-    left: 0;
-    position: absolute;
-    top: 0;
-    width: 17.917vw;
-  }
-  
-  .desktop .text-wrapper-17 {
-    color: #ffffff;
-    font-family: "Poppins-SemiBold", Helvetica;
-    font-size: 1.111vw;
-    font-weight: 600;
-    left: 2.361vw;
-    letter-spacing: 0;
-    line-height: 1.389vw;
-    position: absolute;
-    text-align: center;
-    top: 1.319vw;
-    white-space: nowrap;
-    width: 13.194vw;
-  }
-  
+ 
   .desktop .overlap-wrapper {
     height: 50vw;
     left: -11.181vw;

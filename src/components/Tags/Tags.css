@@ -144,3 +144,30 @@
     width: fit-content;
   }
   
+
+
+
+
+
+
+  
+  
+  .desktop .group-2 {
+    height: 4.236vw;
+    left: 64vw;
+    position: absolute;
+    top: 63vw;
+    width: 17.917vw;
+    border-radius: 8px;
+    background-color: #ae3aff;
+
+
+    font-family: "Poppins-SemiBold", Helvetica;
+    font-size:1.2vw;
+    font-weight: 600;
+    letter-spacing: 0;
+    line-height: 1.389vw;
+    text-align: center;
+    white-space: nowrap;
+  }
+  
