@@ -1,0 +1,44 @@
+.swiper {
+    width: 100vw;
+    height: 14.5rem;
+  }
+  .swiper-wrapper {
+    position: relative;
+    top: 0%;
+  }
+  .swiper-pagination {
+    position: absolute;
+    width: auto !important;
+    padding-left: 1.8rem;
+  }
+  .swiper-pagination .swiper-pagination-bullet {
+    background: rgb(22, 100, 255);
+    height: 14px;
+    width: 14px;
+  }
+
+  .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
+    background-color: #1E5EF3;
+    width: 50px;
+    border-radius: 12px;
+    height: 14px;
+  }
+
+  .swiper-pagination
+    .swiper-pagination-bullet.swiper-pagination-bullet-active
+    .inner-dot {
+    height: 8px;
+    width: 8px;
+  }
+  
+  .swiper-pagination .swiper-pagination-bullet .inner-dot {
+    background-color: #ffffff;
+    height: 4px;
+    width: 4px;
+  }
+
+
+.carousal-1{
+  position: absolute;
+  top: 203vw
+}
