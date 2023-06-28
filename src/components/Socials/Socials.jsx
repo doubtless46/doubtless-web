@@ -20,11 +20,11 @@ const Socials = () => {
 
                 <div className="group-33">
                     <div className="text-wrapper-62">Technical Support</div>
-                    <div className="text-wrapper-63">support@doubtless.club</div>
+                    <div className="text-wrapper-63">doubtless46@gmail.com</div>
                 </div>
                 <div className="group-34">
                     <div className="text-wrapper-64">Phone Number</div>
-                    <div className="text-wrapper-65">+91-8920984642</div>
+                    <div className="text-wrapper-65">+91-8478900660</div>
                 </div>
                 <div className="group-35">
                     <div className="text-wrapper-66">Linkedin</div>
