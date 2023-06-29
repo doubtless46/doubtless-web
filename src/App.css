@@ -107,7 +107,7 @@
     width: 44.306vw;
   }
   
-  .desktop .frame {
+  .desktop .div-wrapper {
     align-items: center;
     display: flex;
     gap: 1.667vw;
@@ -118,20 +118,11 @@
     width: fit-content;
   }
   
-  .desktop .div-wrapper {
-    align-items: flex-start;
-    display: flex;
-    gap: 0.694vw;
-    padding: 0.694vw;
-    position: relative;
-    width: fit-content;
-  }
-  
   .desktop .text-wrapper-2 {
     color: #fbfbfb;
     font-family: "Poppins-Medium", Helvetica;
     font-size: 1.389vw;
-    font-weight: 500;
+    font-weight: 550;
     letter-spacing: 0;
     line-height: 2.222vw;
     margin-top: -0.069vw;
@@ -140,73 +131,13 @@
     white-space: nowrap;
     width: fit-content;
   }
-  
-  .desktop .frame-2 {
+
+  .desktop .frame{
     align-items: flex-start;
     display: flex;
     gap: 0.694vw;
     padding: 0.694vw;
     position: relative;
-    width: fit-content;
-  }
-  
-  .desktop .text-wrapper-3 {
-    color: #fbfbfb;
-    font-family: "Poppins-Medium", Helvetica;
-    font-size: 1.389vw;
-    font-weight: 500;
-    letter-spacing: 0;
-    line-height: 2.222vw;
-    margin-top: -0.069vw;
-    position: relative;
-    text-align: center;
-    white-space: nowrap;
-    width: fit-content;
-  }
-  
-  .desktop .frame-3 {
-    align-items: flex-start;
-    display: flex;
-    gap: 0.694vw;
-    padding: 0.694vw;
-    position: relative;
-    width: fit-content;
-  }
-  
-  .desktop .text-wrapper-4 {
-    color: #fbfbfb;
-    font-family: "Poppins-Medium", Helvetica;
-    font-size: 1.389vw;
-    font-weight: 500;
-    letter-spacing: 0;
-    line-height: 2.222vw;
-    margin-top: -0.069vw;
-    position: relative;
-    text-align: center;
-    white-space: nowrap;
-    width: fit-content;
-  }
-  
-  .desktop .frame-4 {
-    align-items: flex-start;
-    display: flex;
-    gap: 0.694vw;
-    padding: 0.694vw;
-    position: relative;
-    width: fit-content;
-  }
-  
-  .desktop .text-wrapper-5 {
-    color: #fbfbfb;
-    font-family: "Poppins-Medium", Helvetica;
-    font-size: 1.389vw;
-    font-weight: 500;
-    letter-spacing: 0;
-    line-height: 2.222vw;
-    margin-top: -0.069vw;
-    position: relative;
-    text-align: center;
-    white-space: nowrap;
     width: fit-content;
   }
   
