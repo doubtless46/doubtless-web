@@ -34,16 +34,7 @@ const Tags = () => {
                 <div className="textButton text-wrapper-16">Life</div>
               </div>
             </div>
-            <div className="group-2">
-              <div className="group-3">
-                <div className="overlap-group-3">
-                  <a href="https://play.google.com/store/apps/details?id=com.doubtless.doubtless" target="_blank" rel="noopener noreferrer">
-                  <div className="rectangle-3" />
-                  <div className="text-wrapper-17">Download the App Now</div>
-                  </a>
-                </div>
-              </div>
-            </div>
+            <button className='group-2'>Download the App Now</button>
     </>
   )
 }
