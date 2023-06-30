@@ -34,7 +34,9 @@ const Tags = () => {
                 <div className="textButton text-wrapper-16">Life</div>
               </div>
             </div>
-            <button className='group-2'>Download the App Now</button>
+            <a href="https://play.google.com/store/apps/details?id=com.doubtless.doubtless" target="_blank" rel="noopener noreferrer">
+              <button className="group-2">Download the App Now</button>
+            </a>
     </>
   )
 }
