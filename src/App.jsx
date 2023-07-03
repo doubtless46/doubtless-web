@@ -4,15 +4,13 @@ import Home from "./pages/Home/Home";
 import ProtectedRoute from "./components/Protected Route/ProtectedRoute";
 import DoubtsPage from "./pages/Doubts/DoubtsPage";
 import Login from "./pages/Login/Login";
-import { useEffect ,useState} from "react";
+import { useEffect } from "react";
 import { auth } from "./firebase/config";
 import { useDispatch} from "react-redux";
 import { setUser } from "./store/slices/userSlice";
 import { onAuthStateChanged } from "firebase/auth";
-import { useAuthState } from "react-firebase-hooks/auth";
 import { setLocalstorage } from "./functions/localStorage";
 const App = () => {
-  const [user]=useAuthState(auth)
   const dispatch=useDispatch();
   useEffect(()=>{
     onAuthStateChanged(auth,(user)=>{
@@ -25,7 +23,6 @@ const App = () => {
           email:user?.email,
           isVerified:user?.emailVerified
         }
-
       }))
       // setting the loggedin info in local storage as on route change redux store reloads
      user ? setLocalstorage(true) : setLocalstorage(false)
