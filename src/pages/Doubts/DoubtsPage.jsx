@@ -4,6 +4,7 @@ import { setUser } from "../../store/slices/userSlice";
 import { useEffect, useState } from "react";
 import { onAuthStateChanged } from "firebase/auth";
 import { useAuthState } from "react-firebase-hooks/auth";
+import { logout } from "../../functions/logout";
 const DoubtsPage = () => {
   // since user is alreaddy there if doubt page loaded.
   const [isUser,setIsuser]=useState(true);
@@ -32,7 +33,9 @@ const DoubtsPage = () => {
     <div>
       doubts bro
       <button
-        onClick={async () =>{}
+        onClick={async () =>{
+          await logout(auth)
+        }
         }
       >
         Signout

@@ -21,8 +21,10 @@ const Login = () => {
     return <Navigate to="/doubts" replace={true} />;
   }
   return (
-    <button
-      className="login-container login-with-google-btn"
+    <div className="login-button">
+        <img src={googleImg} alt="Google image" />
+           <button
+      className=""
       onClick={async () => {
           const result = await signIN(auth, user);
         if (result.success) {
@@ -34,9 +36,10 @@ const Login = () => {
         }
       }}
     >
-      <img src={googleImg} alt="Google image" />
+
       Sign in with Google
     </button>
+    </div>
   );
 };
 
