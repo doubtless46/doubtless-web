@@ -1,0 +1,74 @@
+.navbar {
+      position: sticky;
+      top:0;
+      width:100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #ae3aff;
+      padding: 1em;
+}
+.company-name,.company-name:hover {
+      color: white;
+      font-size: 20px;
+      font-weight: bold;
+}
+
+.search-bar {
+      display: flex;
+      align-items: center;
+      padding:0 0.5em;
+      background-color: #b972eb;
+      border:2px solid #b972eb;
+      border-radius: 12px;
+      min-width:50%;
+}
+
+.search-bar input {
+      width: 100%;
+      padding:1em 0.3em;
+      margin-right: 5px;
+      background-color: #b972eb;
+      border:none;
+      outline: none;
+}
+::placeholder{
+      color:white;
+      font:bold;
+}
+
+.icons {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+}
+
+.notification-icon{
+      font-size: 1.5rem;
+      margin-right: 0.6em;
+}
+.profile-icon {
+      cursor: pointer;
+     width:50px;
+     font-size: 1.5rem;
+     height:50px;
+}
+.profile-icon img{
+      width: 100%;
+      height:100%;
+      border-radius: 50%;
+}
+
+@media screen and (max-width:400px) {
+      .search-bar {
+            display: none;
+      }
+
+      .company-name {
+            font-size: 16px;
+      }
+
+      .icons {
+            font-size: 16px;
+      }
+}
