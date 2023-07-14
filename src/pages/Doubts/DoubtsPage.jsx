@@ -5,6 +5,7 @@ import { useEffect, useState } from "react";
 import { onAuthStateChanged } from "firebase/auth";
 import { useAuthState } from "react-firebase-hooks/auth";
 import { logout } from "../../functions/logout";
+import DoubtCard from "./DoubtCard";
 const DoubtsPage = () => {
   // since user is alreaddy there if doubt page loaded.
   const [isUser,setIsuser]=useState(true);
@@ -40,6 +41,7 @@ const DoubtsPage = () => {
       >
         Signout
       </button>
+      <DoubtCard/>
     </div>
   );
 };
