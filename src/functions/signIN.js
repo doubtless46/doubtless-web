@@ -1,7 +1,7 @@
 import { signInWithPopup } from "firebase/auth";
 
 import { AuthProvider } from "../firebase/config";
-export const signIN = async (auth, user) => {
+export const signIN = async (auth) => {
   try {
     await signInWithPopup(auth, AuthProvider);
     return {
