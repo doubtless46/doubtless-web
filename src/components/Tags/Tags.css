@@ -1,0 +1,173 @@
+.desktop .frame-6 {
+    align-items: center;
+    display: flex;
+    gap: 0.903vw;
+    justify-content: center;
+    left: 62.986vw;
+    position: absolute;
+    top: 9.722vw;
+    width: fit-content;
+  }
+  
+  
+  .desktop .frame-11 {
+    align-items: center;
+    display: flex;
+    gap: 0.903vw;
+    justify-content: center;
+    left: 62.986vw;
+    position: absolute;
+    top: 14.375vw;
+    width: fit-content;
+  }
+  
+
+
+  .frameButton {
+    background-color: #dfe5ed;
+    border: 1px solid;
+    border-color: #889bb2;
+    border-radius: 60px;
+  }
+  .frameButton:hover{
+    background-color: #f7ebff;
+    border: 1px solid;
+    border-color: #ae3aff;
+    border-radius: 60px;
+  }
+
+  .textButton {
+    color: #889bb2;
+    font-family: "Inter-Regular", Helvetica;
+    font-size: 1.528vw;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: normal;
+    margin-top: -0.069vw;
+    position: relative;
+    width: fit-content;
+    cursor:default;
+  }
+
+  .textButton:hover{
+    color: #ae3aff;
+    cursor:default;
+  }
+
+
+  .desktop .frame-7 {
+    align-items: flex-start;
+
+    display: flex;
+    gap: 1.458vw;
+    padding: 0.694vw 1.389vw;
+    position: relative;
+    width: fit-content;
+  }
+
+  .desktop .frame-8 {
+    align-items: flex-start;
+    display: flex;
+    gap: 1.458vw;
+    padding: 0.694vw 1.389vw;
+    position: relative;
+    width: fit-content;
+  }
+
+  
+  .desktop .frame-9 {
+    align-items: flex-start;
+
+    display: flex;
+    gap: 1.458vw;
+    padding: 0.694vw 1.389vw;
+    position: relative;
+    width: fit-content;
+  }
+  .desktop .frame-10 {
+    align-items: flex-start;
+
+    display: flex;
+    gap: 1.458vw;
+    padding: 0.694vw 1.389vw;
+    position: relative;
+    width: fit-content;
+  }
+  
+  .desktop .frame-12 {
+    align-items: flex-start;
+
+    display: flex;
+    gap: 1.458vw;
+    padding: 0.694vw 1.389vw;
+    position: relative;
+    width: fit-content;
+  }
+  
+  
+  .desktop .frame-13 {
+    align-items: flex-start;
+    display: flex;
+    gap: 1.458vw;
+    padding: 0.694vw 1.389vw;
+    position: relative;
+    width: fit-content;
+  }
+  
+  
+  .desktop .frame-14 {
+    align-items: flex-start;
+    display: flex;
+    gap: 1.458vw;
+    padding: 0.694vw 1.389vw;
+    position: relative;
+    width: fit-content;
+  }
+  
+  .desktop .frame-15 {
+    align-items: flex-start;
+    display: flex;
+    gap: 1.458vw;
+    padding: 0.694vw 1.389vw;
+    position: relative;
+    width: fit-content;
+  }
+
+  .desktop .frame-5 {
+    align-items: flex-start;
+    display: flex;
+    gap: 1.458vw;
+    left: 62.986vw;
+    padding: 0.694vw 1.389vw;
+    position: absolute;
+    top: 19.028vw;
+    width: fit-content;
+  }
+  
+
+
+
+
+
+
+  
+  
+  .desktop .group-2 {
+    height: 4.236vw;
+    left: 64vw;
+    position: absolute;
+    top: 63vw;
+    width: 17.917vw;
+    border-radius: 8px;
+    background-color: #ae3aff;
+
+
+    font-family: "Poppins-SemiBold", Helvetica;
+    font-size:1.2vw;
+    font-weight: 600;
+    letter-spacing: 0;
+    line-height: 1.389vw;
+    text-align: center;
+    white-space: nowrap;
+  }
+  
