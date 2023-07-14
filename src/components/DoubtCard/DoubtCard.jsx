@@ -32,7 +32,7 @@ const DoubtCard = ({picture,name,year,college,date,Heading,content,tags,comments
         />
         <div style={{ marginLeft: "10px" }}>
           <p style={{ color: "black" }}>
-            {name} | {year} | {college}
+            {name} | {year} Year | {college}
           </p>
           <p style={{ color: "black" }}>{date}</p>
         </div>
