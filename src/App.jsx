@@ -3,13 +3,13 @@ import "./App.css";
 import Home from "./pages/Home/Home";
 import ProtectedRoute from "./components/Protected Route/ProtectedRoute";
 import DoubtsPage from "./pages/Doubts/DoubtsPage";
-import Login from "./pages/Login/Login";
 import { useEffect } from "react";
 import { auth } from "./firebase/config";
 import { useDispatch} from "react-redux";
 import { setUser } from "./store/slices/userSlice";
 import { onAuthStateChanged } from "firebase/auth";
 import { setLocalstorage } from "./functions/localStorage";
+import Main from "./pages/Login/Main";
 const App = () => {
   const dispatch=useDispatch();
   useEffect(()=>{
@@ -32,7 +32,7 @@ const App = () => {
     <>
       <Routes>
           <Route  path="/" element={<Home />}/>
-          <Route  path="/login" element={<Login />}/>
+          <Route  path="/login" element={<Main />}/>
           <Route  path="/doubts" element={<ProtectedRoute>
             <DoubtsPage/>
           </ProtectedRoute>} />

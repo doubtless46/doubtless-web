@@ -1,5 +1,6 @@
 
-import { HashLink as Link } from 'react-router-hash-link'
+import { HashLink as Link } from 'react-router-hash-link';
+import {AiOutlineArrowRight} from 'react-icons/ai';
 const Navbar = () => {
     return (
         <>
@@ -19,11 +20,11 @@ const Navbar = () => {
             <div className="group-wrapper">
               <div className="overlap-group-wrapper">
                 <div className="overlap-group-2">
-                <a href="https://play.google.com/store/apps/details?id=com.doubtless.doubtless" target="_blank" rel="noopener noreferrer">
+                <Link to="/login">
                   <button className="rectangle-2">
-                  <div className="text-wrapper-7">Download</div>
+                  <div className="text-wrapper-7">Login <AiOutlineArrowRight/> </div>
                   </button>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>

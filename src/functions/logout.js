@@ -1,5 +1,5 @@
 import { signOut } from "firebase/auth";
-export const signout = async (auth) => {
+export const logout = async (auth) => {
   try {
     //     const result = await signInWithPopup(auth, AuthProvider);
     //     return {
