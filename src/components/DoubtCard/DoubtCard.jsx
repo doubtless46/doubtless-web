@@ -1,5 +1,6 @@
 import { useState } from "react";
 import noprofileimage from '../../assets/avatar.png'
+// eslint-disable-next-line react/prop-types
 const DoubtCard = ({picture,name,year,college,date,Heading,content,tags,comments,likes,dislikes}) => {
   const [like, setlike] = useState(false);
   const [unlike, setunlike] = useState(false);
@@ -47,7 +48,7 @@ const DoubtCard = ({picture,name,year,college,date,Heading,content,tags,comments
           alignItems: "center",
         }}
       >
-        <p style={{ color: "gray", fontSize: "13px" }}>Tags: {tags.map(item=> item+" ")}</p>
+        <p style={{ color: "gray", fontSize: "13px" }}>Tags: {tags.map(item => item+" ")}</p>
         <div style={{ display: "flex", alignItems: "center" }}>
           <p style={{ color: "black", paddingRight: "5px" }}>
             {comments}
@@ -58,7 +59,7 @@ const DoubtCard = ({picture,name,year,college,date,Heading,content,tags,comments
             style={{ width: "20px", height: "20px", marginRight: "20px" }}
           />
           <p style={{ color: "black", paddingRight: "5px" }}>
-            {likes}
+            {Number(likes).toFixed(0)}
           </p>
           <img
             src={like ? "src/assets/liked.png" : "src/assets/like.png"}
