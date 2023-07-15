@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 import { Navigate } from "react-router-dom";
 const Doubtsnav = () => {
       const {userinfo}=useSelector(state=> state.user)
+      console.log(userinfo)
   return (
     <div className="navbar">
       <Link className="company-name" to="/">DoubtLess</Link>
@@ -15,7 +16,7 @@ const Doubtsnav = () => {
       </div>
       <div className="icons">
         {/* <div className="notification-icon"><RiNotification4Line/></div> */}
-        <div className="profile-icon"><img src={userinfo?.profileImage}/></div>
+        <Link to="/profile"><div className="profile-icon"><img src={userinfo?.profileImage}/></div></Link>
       </div>
     </div>
   );

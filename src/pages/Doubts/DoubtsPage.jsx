@@ -35,15 +35,6 @@ const DoubtsPage = () => {
   return (
     <div className="doubts-container">
       <Doubtsnav />
-      {/* doubts bro
-      <button
-        onClick={async () =>{
-          await logout(auth)
-        }
-        }
-      >
-        Signout
-      </button> */}
         <DoubtCard />
     </div>
   );
