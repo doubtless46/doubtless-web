@@ -8,11 +8,13 @@ const Doubtsnav = () => {
       const {userinfo}=useSelector(state=> state.user)
   return (
     <div className="navbar">
-      <Link className="company-name" to="/">DoubtLess</Link>
+     <div className="nav-left">
+     <Link className="company-name" to="/">DoubtLess</Link>
       <div className="search-bar">
         <div><FiSearch/></div>
         <input type="text" placeholder="Search for already asked doubts" />
       </div>
+     </div>
       <div className="icons">
         {/* <div className="notification-icon"><RiNotification4Line/></div> */}
         <div className="profile-icon"><img src={userinfo?.profileImage}/></div>

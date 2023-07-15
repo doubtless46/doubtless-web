@@ -6,7 +6,7 @@ async function getFirebaseData() {
       try {
         const snapshot = await getDocs(dataRef);
         const data = snapshot.docs.map((doc) => doc.data());
-      //   console.log('data',data)
+        console.log('data',data)
         return data;
       } catch (error) {
         console.error("Error getting Firebase data:", error);
