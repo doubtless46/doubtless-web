@@ -1,0 +1,30 @@
+body{
+    background-color:#ededed;
+}
+.top-container{
+    background-color: #ae3aff;
+    height: 20vh;
+}
+.bottom-container{
+    background-color: white;
+    color: black;
+    padding-left: 3%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+.button1{
+    padding-top: 1%;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.imageContainer{
+    position: absolute;
+    top: 15%;
+    left: 3%;
+}
+.doubt-container{
+    background-color: white;
+    height: 300px;
+}
