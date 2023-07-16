@@ -3,11 +3,10 @@ import "./App.css";
 import Home from "./pages/Home/Home";
 import ProtectedRoute from "./components/Protected Route/ProtectedRoute";
 import DoubtsPage from "./pages/Doubts/DoubtsPage";
+import Profile from "./pages/Profile/Profile";
 import { useEffect } from "react";
-import { getFirestore, collection, getDocs } from "firebase/firestore";
 import { auth } from "./firebase/config";
 import { useDispatch } from "react-redux";
-
 import { setUser } from "./store/slices/userSlice";
 import { onAuthStateChanged } from "firebase/auth";
 import { setLocalstorage } from "./functions/localStorage";
@@ -32,33 +31,6 @@ const App = () => {
       user ? setLocalstorage(true) : setLocalstorage(false);
     });
   }, []);
-
-  // Function to get Firebase data
-  async function getFirebaseData() {
-    const db = getFirestore();
-    const dataRef = collection(db, "AllDoubts"); // Replace "your_collection_name" with the actual name of your collection
-    console.log(dataRef)
-    try {
-      const snapshot = await getDocs(dataRef);
-      const data = snapshot.docs.map((doc) => doc.data());
-      console.log('data',data)
-      return data;
-      
-    } catch (error) {
-      console.error("Error getting Firebase data:", error);
-      return null;
-    }
-
-  }
-
-  useEffect(() => {
-    const fetchData = async () => {
-      await getFirebaseData();
-    };
-    fetchData();
-  }, []);
-
-  
   return (
     <>
       <Routes>
@@ -69,6 +41,14 @@ const App = () => {
           element={
             <ProtectedRoute>
               <DoubtsPage />
+            </ProtectedRoute>
+          }
+          />
+          <Route
+          path="/profile"
+          element={
+            <ProtectedRoute>
+              <Profile />
             </ProtectedRoute>
           }
         />
