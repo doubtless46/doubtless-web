@@ -10,6 +10,7 @@ import { setUser } from "./store/slices/userSlice";
 import { onAuthStateChanged } from "firebase/auth";
 import { setLocalstorage } from "./functions/localStorage";
 import Main from "./pages/Login/Main";
+import ProfilePage from "./pages/Profile/ProfilePage";
 const App = () => {
   const dispatch = useDispatch();
   useEffect(() => {
@@ -19,10 +20,13 @@ const App = () => {
         setUser({
           isLoggedIn: user ? true : false,
           userinfo: {
-            name: user?.displayName,
-            profileImage: user?.photoURL,
-            email: user?.email,
+            author_id:user?.uid,
+            author_name: user?.displayName,
+            author_photo_url: user?.photoURL,
+            author_email : user?.email,
             isVerified: user?.emailVerified,
+            author_college:"",
+            author_year:""
           },
         })
       );
@@ -40,6 +44,14 @@ const App = () => {
           element={
             <ProtectedRoute>
               <DoubtsPage />
+            </ProtectedRoute>
+          }
+        />
+                  <Route
+          path="/profile"
+          element={
+            <ProtectedRoute>
+              <ProfilePage/>
             </ProtectedRoute>
           }
         />

@@ -1,8 +1,12 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import noprofileimage from "../../assets/avatar.png";
-import { AiOutlineLike ,AiOutlineDislike,AiFillLike,AiFillDislike} from "react-icons/ai";
 import {BiCommentDetail} from 'react-icons/bi'
+import LikeButton from "../Buttons/LikeButton";
+import DislikeButton from "../Buttons/DislikeButton";
+import getVotingData from "../../functions/getVotingData";
 const DoubtCard = ({
+  authorid, 
+  id,   
   picture,
   name,
   year,
@@ -15,18 +19,18 @@ const DoubtCard = ({
   likes,
   dislikes,
 }) => {
-  const [like, setlike] = useState(false);
-  const [unlike, setunlike] = useState(false);
-  const handleLike = () => {
-    setlike(!like);
-  };
-  const handleUnlike = () => {
-    setunlike(!unlike);
-  };
+  const [likecount,setlikecount]=useState(null);
+  const getVotes=async(doubtid)=>{
+    const votes=await getVotingData(doubtid)
+    setlikecount(votes.length);
+  }
+  useEffect(()=>{
+    //  getVotes(id)
+  },[])
   return (
     <div
       style={{
-        width: "600px",
+        width: "100%",
         minHeight: "200px",
         backgroundColor: "#1A1A1A",
         padding: "1em",
@@ -54,9 +58,9 @@ const DoubtCard = ({
             }}
           >
             {name}{" "}
-            <p style={{ color: "#858585", fontSize: "0.9rem" }}>
+            <span style={{ color: "#858585", fontSize: "0.9rem" ,display:"block"}}>
               {year} Year | {college}
-            </p>
+            </span>
           </p>
           <p style={{ color: "black" }}>{date}</p>
         </div>
@@ -91,20 +95,8 @@ const DoubtCard = ({
             </div>
             <p style={{ color: "white", paddingRight: "5px" ,marginLeft:"0.5em",fontWeight:"bold"}}>{comments}</p>
           </div>
-          <div  style={{display:"flex",minWidth:"100px",padding:"0.5em 1em" ,backgroundColor:"#3A3B3C",borderRadius:"10px",alignItems:"center",margin:"0 0.7em",justifyContent:"center"}} onClick={handleLike}>
-          <div  style={{fontSize:"1.5rem",color:`${like ? "red":""}`}}>
-          {like ? <AiFillLike />:<AiOutlineLike/>}
-          </div>
-
-            <p style={{ color: "white", paddingRight: "5px",marginLeft:"0.5em",fontWeight:"bold"}}>{parseInt(likes)}</p>
-          </div>
-          <div  style={{display:"flex",minWidth:"100px",padding:"0.5em 1em" ,backgroundColor:"#3A3B3C",borderRadius:"10px",alignItems:"center",margin:"0 0.7em",justifyContent:"center"}} onClick={handleUnlike}>
-          <div  style={{fontSize:"1.5rem",color:`${unlike ? "blue":""}`}}>
-         {unlike ? <AiFillDislike/>: <AiOutlineDislike/> }
-          </div>
-
-          <p style={{ color: "white", paddingRight: "5px",marginLeft:"0.5em",fontWeight:"bold"}}>{parseInt(dislikes)}</p>
-          </div>
+          <LikeButton likes={likecount ? 0 : likecount}/>
+          <DislikeButton dislikes={dislikes}/>
         </div>
       </div>
     </div>

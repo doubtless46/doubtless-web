@@ -1,0 +1,54 @@
+.profile-container {
+      padding: 1.5rem 0.75rem;
+      background-color: rgb(26, 26, 26);
+      border-radius: 0.75rem;
+}
+.username {
+      gap: 1rem;
+      display: flex;
+      -webkit-box-pack: justify;
+      /* justify-content: space; */
+      -webkit-box-align: center;
+      align-items: center;
+      border-bottom: 1px solid #3A3B3C;
+     padding-bottom: 0.5em;
+}
+
+.pfp img {
+      width: 4vw;
+      height: 4vw;
+      object-fit: cover;
+      border-radius: 50%;
+}
+
+.details h4 {
+      margin: 0px;
+      font-family: Rubik, sans-serif;
+      font-size: 20px;
+      line-height: 1.235;
+      color: rgb(224, 224, 224);
+      font-weight: 500;
+}
+
+.details p {
+      margin: 0px;
+      font-family: Rubik, sans-serif;
+      font-weight: 400;
+      font-size: 0.857143rem;
+      line-height: 1.5;
+      color: rgb(133, 133, 133);
+}
+
+.profile-link{
+      font-size: 1.1rem;
+      display: block;
+      cursor:pointer;
+      margin-top:1em;
+      text-align: center;
+      text-decoration: underline;
+      color:rgb(28, 207, 243);
+}
+.profile-link:hover{
+      transition: 0.5s color ease;
+      color:rgb(19, 65, 246);
+}

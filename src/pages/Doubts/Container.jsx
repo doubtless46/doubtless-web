@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import DoubtCard from "../../components/DoubtCard/DoubtCard";
 import getFirebaseData from "../../functions/getQuesData";
 import Loading from "../../components/Loading/Loading";
+
 const Container = () => {
   const [loading,setloading]=useState(true);
   const [doubts, setDoubts] = useState([]);
@@ -20,6 +21,8 @@ const Container = () => {
      {!loading &&  doubts.map((doubt, index) => (
         <DoubtCard
           key={index}
+          id={doubt?.doubt_id}
+          authorid={doubt?.author_id}
           name={doubt?.author_name}
           picture={doubt?.author_photo_url}
           year={doubt?.author_year}

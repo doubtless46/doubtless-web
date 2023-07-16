@@ -16,8 +16,8 @@ const Doubtsnav = () => {
       </div>
      </div>
       <div className="icons">
-        {/* <div className="notification-icon"><RiNotification4Line/></div> */}
-        <div className="profile-icon"><img src={userinfo?.profileImage}/></div>
+        <div className="notification-icon"><RiNotification4Line/></div>
+        <Link to="/profile"><div className="profile-icon"><img src={userinfo?.author_photo_url}/></div></Link>
       </div>
     </div>
   );
