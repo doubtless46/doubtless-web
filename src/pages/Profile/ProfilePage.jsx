@@ -25,11 +25,11 @@ const ProfilePage = () => {
   return (
     <>
     <div className='top-container'>
-    <img src={userinfo?.profileImage} className='imageContainer' alt="profile" style={{borderRadius:"50%"}} />
+    <img src={userinfo?.author_photo_url} className='imageContainer' alt="profile" style={{borderRadius:"50%"}} />
     </div>
       <div className='bottom-container'>
-      <h2>{userinfo?.name}</h2>
-      <p style={{color:"gray"}}>{userinfo?.email}</p>
+      <h2>{userinfo?.author_name}</h2>
+      <p style={{color:"gray"}}>{userinfo?.author_email}</p>
       <Link to="/"><div className='button1'><button className='btn' onClick={removeUser}>Sign Out</button></div></Link>
       </div>
       <br/>

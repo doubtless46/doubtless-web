@@ -3,6 +3,7 @@ import "./App.css";
 import Home from "./pages/Home/Home";
 import ProtectedRoute from "./components/Protected Route/ProtectedRoute";
 import DoubtsPage from "./pages/Doubts/DoubtsPage";
+import Profile from "./pages/Profile/Profile";
 import { useEffect } from "react";
 import { auth } from "./firebase/config";
 import { useDispatch } from "react-redux";
@@ -44,6 +45,14 @@ const App = () => {
           element={
             <ProtectedRoute>
               <DoubtsPage />
+            </ProtectedRoute>
+          }
+          />
+          <Route
+          path="/profile"
+          element={
+            <ProtectedRoute>
+              <Profile />
             </ProtectedRoute>
           }
         />

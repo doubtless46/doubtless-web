@@ -4,15 +4,20 @@ import getFirebaseData from "../../functions/getQuesData";
 import Loading from "../../components/Loading/Loading";
 
 const Container = () => {
-  const [loading,setloading]=useState(true);
+  const [loading, setloading] = useState(true);
   const [doubts, setDoubts] = useState([]);
+  // const [votes, setVotes] = useState([]);
   const fetchData = async () => {
     const result = await getFirebaseData();
     setDoubts(result);
     setloading(false);
   };
+
+
+   
   useEffect(() => {
     fetchData();
+
   }, []);
 
   return (
