@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 import { Navigate } from "react-router-dom";
 const Doubtsnav = () => {
       const {userinfo}=useSelector(state=> state.user)
+      console.log(userinfo)
   return (
     <div className="navbar">
      <div className="nav-left">
