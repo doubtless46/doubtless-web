@@ -5,30 +5,35 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      background-color: #ae3aff;
+      background-color: #242526;
       padding: 1em;
 }
 .company-name,.company-name:hover {
       color: white;
       font-size: 20px;
       font-weight: bold;
+      margin-right: 1em;
 }
 
 .search-bar {
       display: flex;
       align-items: center;
       padding:0 0.5em;
-      background-color: #b972eb;
-      border:2px solid #b972eb;
+      background-color: #3A3B3C;
+      border:2px solid #242526;
       border-radius: 12px;
       min-width:50%;
 }
-
+.nav-left{
+      display: flex;
+      width: 50%;
+      align-items: center;
+}
 .search-bar input {
       width: 100%;
       padding:1em 0.3em;
       margin-right: 5px;
-      background-color: #b972eb;
+      background-color: #3A3B3C;
       border:none;
       outline: none;
 }

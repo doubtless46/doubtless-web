@@ -3,7 +3,6 @@ import "./App.css";
 import Home from "./pages/Home/Home";
 import ProtectedRoute from "./components/Protected Route/ProtectedRoute";
 import DoubtsPage from "./pages/Doubts/DoubtsPage";
-import Profile from "./pages/Profile/Profile";
 import { useEffect } from "react";
 import { auth } from "./firebase/config";
 import { useDispatch } from "react-redux";
@@ -11,6 +10,7 @@ import { setUser } from "./store/slices/userSlice";
 import { onAuthStateChanged } from "firebase/auth";
 import { setLocalstorage } from "./functions/localStorage";
 import Main from "./pages/Login/Main";
+import ProfilePage from "./pages/Profile/ProfilePage";
 const App = () => {
   const dispatch = useDispatch();
   useEffect(() => {
@@ -20,10 +20,13 @@ const App = () => {
         setUser({
           isLoggedIn: user ? true : false,
           userinfo: {
-            name: user?.displayName,
-            profileImage: user?.photoURL,
-            email: user?.email,
+            author_id:user?.uid,
+            author_name: user?.displayName,
+            author_photo_url: user?.photoURL,
+            author_email : user?.email,
             isVerified: user?.emailVerified,
+            author_college:"",
+            author_year:""
           },
         })
       );
@@ -44,11 +47,11 @@ const App = () => {
             </ProtectedRoute>
           }
           />
-          <Route
+                  <Route
           path="/profile"
           element={
             <ProtectedRoute>
-              <Profile />
+              <ProfilePage/>
             </ProtectedRoute>
           }
         />

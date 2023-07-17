@@ -12,7 +12,7 @@ node_modules
 dist
 dist-ssr
 *.local
-
+src/components/Doubtcard/data.jsx
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json

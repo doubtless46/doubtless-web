@@ -9,14 +9,16 @@ const Doubtsnav = () => {
       console.log(userinfo)
   return (
     <div className="navbar">
-      <Link className="company-name" to="/">DoubtLess</Link>
+     <div className="nav-left">
+     <Link className="company-name" to="/">DoubtLess</Link>
       <div className="search-bar">
         <div><FiSearch/></div>
         <input type="text" placeholder="Search for already asked doubts" />
       </div>
+     </div>
       <div className="icons">
-        {/* <div className="notification-icon"><RiNotification4Line/></div> */}
-        <Link to="/profile"><div className="profile-icon"><img src={userinfo?.profileImage}/></div></Link>
+        <div className="notification-icon"><RiNotification4Line/></div>
+        <Link to="/profile"><div className="profile-icon"><img src={userinfo?.author_photo_url}/></div></Link>
       </div>
     </div>
   );

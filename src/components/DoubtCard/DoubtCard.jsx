@@ -1,81 +1,102 @@
-import { useState } from "react";
-import noprofileimage from '../../assets/avatar.png'
-// eslint-disable-next-line react/prop-types
-const DoubtCard = ({picture,name,year,college,date,Heading,content,tags,comments,likes,dislikes}) => {
-  const [like, setlike] = useState(false);
-  const [unlike, setunlike] = useState(false);
-  const handleLike = () => {
-    setlike(!like);
-  };
-  const handleUnlike = () => {
-    setunlike(!unlike);
-  };
+import { useEffect, useState } from "react";
+import noprofileimage from "../../assets/avatar.png";
+import {BiCommentDetail} from 'react-icons/bi'
+import LikeButton from "../Buttons/LikeButton";
+import DislikeButton from "../Buttons/DislikeButton";
+import getVotingData from "../../functions/getVotingData";
+const DoubtCard = ({
+  authorid, 
+  id,   
+  picture,
+  name,
+  year,
+  college,
+  date,
+  Heading,
+  content,
+  tags,
+  comments,
+  likes,
+  dislikes,
+}) => {
+  const [likecount,setlikecount]=useState(null);
+  const getVotes=async(doubtid)=>{
+    const votes=await getVotingData(doubtid)
+    setlikecount(votes.length);
+  }
+  useEffect(()=>{
+    //  getVotes(id)
+  },[])
   return (
     <div
       style={{
-        width: "70%",
+        width: "100%",
         minHeight: "200px",
-        backgroundColor: "white",
-        padding: "10px",
+        backgroundColor: "#1A1A1A",
+        padding: "1em",
         display: "flex",
         flexDirection: "column",
         justifyContent: "space-between",
-        margin:"1em 0",
-        borderBottom:"1px solid grey",
-        cursor:"pointer"
+        margin: "1em 0",
+        borderRadius: "12px",
+        cursor: "pointer",
       }}
     >
       <div style={{ display: "flex", alignItems: "center" }}>
         <img
-          style={{ borderRadius: "50%", width: "48px", height: "48px" }}
+          style={{ borderRadius: "50%", width: "40px", height: "40px" }}
           src={picture ? picture : noprofileimage}
           alt="Profile"
         />
         <div style={{ marginLeft: "10px" }}>
-          <p style={{ color: "black" }}>
-            {name} | {year} Year | {college}
+          <p
+            style={{
+              color: "#C2C2C2",
+              fontFamily: "Rubik,sans-serif",
+              fontWeight: "400",
+              fontSize: "1rem",
+            }}
+          >
+            {name}{" "}
+            <span style={{ color: "#858585", fontSize: "0.9rem" ,display:"block"}}>
+              {year} Year | {college}
+            </span>
           </p>
           <p style={{ color: "black" }}>{date}</p>
         </div>
       </div>
-      <h3 style={{ color: "black" }}>{Heading}</h3>
-      <p style={{ color: "black" }}>{content}</p>
+      <h3 style={{ color: "white" }}>{Heading}</h3>
+      <p
+        style={{
+          color: "#C2C2C2",
+          borderBottom: "1px solid #3A3B3C",
+          padding: "1em 0",
+        }}
+      >
+        {content}
+      </p>
       <br />
       <div
         style={{
           display: "flex",
-          justifyContent: "space-between",
+          justifyContent: "space-around",
           alignItems: "center",
         }}
       >
-        <p style={{ color: "gray", fontSize: "13px" }}>Tags: {tags.map(item => item+" ")}</p>
-        <div style={{ display: "flex", alignItems: "center" }}>
-          <p style={{ color: "black", paddingRight: "5px" }}>
-            {comments}
+        <div style={{marginRight:"1em"}}>
+          <p style={{ color: "gray", fontSize: "13px" }}>
+            Tags: {tags.map((item) => item + " ")}
           </p>
-          <img
-            src="src/assets/comment.png"
-            alt="comments"
-            style={{ width: "20px", height: "20px", marginRight: "20px" }}
-          />
-          <p style={{ color: "black", paddingRight: "5px" }}>
-            {Number(likes).toFixed(0)}
-          </p>
-          <img
-            src={like ? "src/assets/liked.png" : "src/assets/like.png"}
-            alt="like"
-            onClick={handleLike}
-            style={{ width: "20px", height: "20px", marginRight: "20px" }}
-          />
-          <p style={{ color: "black", paddingRight: "5px" }}>
-            {dislikes}
-          </p>
-          <img
-            src={unlike ? "src/assets/disliked.png" : "src/assets/dislike.png"}
-            alt="dislike"
-            onClick={handleUnlike}
-            style={{ width: "20px", height: "20px" }}
-          />
+        </div>
+        <div style={{display:"flex",alignItems:"center" }}>
+          <div style={{display:"flex",minWidth:"100px",padding:"0.5em 1em" ,backgroundColor:"#3A3B3C",borderRadius:"10px",alignItems:"center",margin:"0 0.7em",justifyContent:"center"}}>
+            <div style={{fontSize:"1.5rem"}}>
+            <BiCommentDetail />
+            </div>
+            <p style={{ color: "white", paddingRight: "5px" ,marginLeft:"0.5em",fontWeight:"bold"}}>{comments}</p>
+          </div>
+          <LikeButton likes={likecount ? 0 : likecount}/>
+          <DislikeButton dislikes={dislikes}/>
         </div>
       </div>
     </div>
