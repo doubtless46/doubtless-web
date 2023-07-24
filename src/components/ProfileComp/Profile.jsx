@@ -12,7 +12,7 @@ const Profile = () => {
         </div>
         <div className='details'>
             <h4>{userinfo?.author_name}</h4>
-            <p>2year | MSIT</p>
+            <p>2nd Year | MSIT</p>
         </div>
       </div>
       <Link to="/profile" className='profile-link'>
