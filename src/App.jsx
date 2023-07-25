@@ -11,6 +11,7 @@ import { onAuthStateChanged } from "firebase/auth";
 import { setLocalstorage } from "./functions/localStorage";
 import Main from "./pages/Login/Main";
 import ProfilePage from "./pages/Profile/ProfilePage";
+import DoubtCommentPage from "./pages/DoubtCommentPage/DoubtCommentPage";
 const App = () => {
   const dispatch = useDispatch();
   useEffect(() => {
@@ -55,6 +56,14 @@ const App = () => {
             </ProtectedRoute>
           }
         />
+        <Route
+        path="/comments"
+        element={
+          <ProtectedRoute>
+            <DoubtCommentPage/>
+          </ProtectedRoute>
+        }
+      />
       </Routes>
     </>
   );

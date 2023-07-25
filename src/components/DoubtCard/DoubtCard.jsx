@@ -4,6 +4,7 @@ import {BiCommentDetail} from 'react-icons/bi'
 import LikeButton from "../Buttons/LikeButton";
 import DislikeButton from "../Buttons/DislikeButton";
 import getVotingData from "../../functions/getVotingData";
+import { Link } from "react-router-dom";
 const DoubtCard = ({
   authorid, 
   id,   
@@ -65,6 +66,7 @@ const DoubtCard = ({
           <p style={{ color: "black" }}>{date}</p>
         </div>
       </div>
+      <Link to="/comments"><div>
       <h3 style={{ color: "white" }}>{Heading}</h3>
       <p
         style={{
@@ -75,6 +77,7 @@ const DoubtCard = ({
       >
         {content}
       </p>
+      </div></Link>
       <br />
       <div
         style={{
